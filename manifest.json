@@ -1,0 +1,8 @@
+{
+    "name": "🌱",
+    "id": "",
+    "api": "1.0.0",
+    "ui": "dist/index.html",
+    "main": "dist/code.js",
+    "editorType": ["figma"]
+}

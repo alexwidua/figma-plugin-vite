@@ -1,0 +1,91 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Figma Theming CSS Variables: https://www.figma.com/plugin-docs/css-variables/ */
+    /* Local variables: */
+    --font-family: 'Inter', 'Helvetica', sans-serif;
+    --font-family-code: 'IBM Plex Mono', SFMono-Regular, Menlo, Monaco, Consolas,
+        'Liberation Mono', 'Courier New', monospace;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        --font-family: 'Inter var', sans-serif;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--figma-color-bg);
+    color: var(--figma-color-text);
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    list-style: none;
+    text-decoration: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+}
+
+div,
+span {
+    cursor: default;
+    user-select: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: inherit;
+}
+
+button {
+    color: var(--figma-color-text);
+    padding: 0;
+    border: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font: inherit;
+    outline: 0;
+}
+
+hr {
+    border: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    -webkit-appearance: none;
+    cursor: default;
+    font: inherit;
+    outline: 0;
+}
+
+svg {
+    display: block;
+}
