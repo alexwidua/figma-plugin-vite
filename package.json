@@ -1,15 +1,15 @@
 {
     "name": "figma-plugin-vite",
-    "description": "Figma plugin template using Vite.",
+    "description": "Figma plugin template using Vite, Esbuild and Typescript.",
     "author": "Alex Widua",
     "license": "MIT",
     "private": true,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
         "dev": "concurrently 'npm:tsc:watch' 'npm:build:watch'",
         "build": "npm run build:plugin -- --minify && npm run build:ui -- --minify",
         "tsc:watch": "tsc --watch --preserveWatchOutput",
-        "build:plugin": "esbuild plugin/code.ts --bundle --outfile=dist/code.js",
+        "build:plugin": "esbuild plugin/code.ts --target=es2016 --bundle --outfile=dist/code.js",
         "build:ui": "npx vite build --emptyOutDir=false",
         "build:watch": "concurrently 'npm:build:plugin -- --watch' 'npm:build:ui -- --watch'",
         "format": "prettier --write ."

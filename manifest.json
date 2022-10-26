@@ -1,6 +1,6 @@
 {
-    "name": "🌱",
-    "id": "",
+    "name": "🌱 Figma-Vite",
+    "id": "_",
     "api": "1.0.0",
     "ui": "dist/index.html",
     "main": "dist/code.js",
